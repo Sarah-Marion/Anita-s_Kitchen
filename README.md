@@ -9,7 +9,7 @@ This site was created to give prospective clients a way to view what Anita's Kit
 * Internet connection
 
 * webpage URL:
-* This site can be viewed at
+* This site can be viewed at https://sarah-marion.github.io/Anita-s_Kitchen/index.html
 ## Known Bugs
 It does not have bugs.If any found, kindly reach out to me.
 ## Technologies Used
