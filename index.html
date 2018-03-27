@@ -4,22 +4,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="css/font-awesome.css"type="text/css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
-  <script src="js/jquery.js"></script>
-  <script src="js/scripts.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116385416-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116385416-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-116385416-1');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-116385416-1');
+  </script>
 
   <title>Anita's Kitchen</title>
 </head>
@@ -56,10 +59,39 @@
     <div class="nav-bar">
       <div class="nav-item">
         <div id="nav-1st">
-          <p id="Happyhour"><strong>Happy Hour</strong></p>
+          <a href="#modal-HappyHour" data-toggle="modal" class="session link"><strong>Happy Hour</strong></a>
         </div>
         <div id="nav-2nd">
-          <p id="PartyTime"><strong>Party Time</strong></p>
+          <a href="#modal-PartyTime" data-toggle="modal" class="session link"><strong>Party Time</strong></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" role="dialog" id="modal-HappyHour">
+      <div class="modal-dialog">
+        <div class="container">
+          <div class="row">
+            <div class="modal-body">
+              <h2>Happy Hour</h2>
+              <h3>Come and join us for the thrill of a lifetime!</h3>
+              <img src="images/pic 1.jpg" alt="happy hour pic"height=200px, width= 200px>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" role="dialog" id="modal-PartyTime">
+      <div class="modal-dialog">
+        <div class="container">
+          <div class="row">
+            <div class="modal-body">
+              <h2>Party Time</h2>
+              <h3>Rock it out with us and blow your stress away!</h3>
+              <img src="images/pic 2.jpeg" alt="party time" height=200px,width=200px>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -114,7 +146,7 @@
           <p><strong>You'll love our delicious fast food</strong></p>
           <p>Lorem ipsum dolor sit amet, vitae suspendisse vestibulum, viverra dignissim vel, dis enim diam vel dui metus, sollicitudin a, tellus massa a tristique donec. Aliquet sed a morbi id nibh, libero id vestibulum, lectus amet, sapien pellentesque
             imperdiet consequat fermentum magna interdum, nam urna vehicula lacus congue mollis. Sapiente ut, vitae augue, nunc proin purus In amet id porttitor natoque.</p>
-            <button class="btn-submit">VIEW GALLERY<i class="fa fa-arrow-right fa-1x"></i></button>
+          <button class="btn-submit">VIEW GALLERY<i class="fa fa-arrow-right fa-1x"></i></button>
           </p>
         </div>
       </div>
@@ -130,7 +162,7 @@
           <p>Lorem ipsum dolor sit amet, vitae suspendisse vestibulum, viverra dignissim vel, dis enim diam vel dui metus, sollicitudin a, tellus massa a tristique donec. Aliquet sed a morbi id nibh, libero id vestibulum, lectus amet, sapien pellentesque
             imperdiet consequat fermentum magna interdum, nam urna vehicula lacus congue mollis. Sapiente ut, vitae augue, nunc proin purus In amet id porttitor natoque.</p>
           </p>
-           <button class="btn-submit">VIEW GALLERY<i class="fa fa-arrow-right fa-1x"></i></button>
+          <button class="btn-submit">VIEW GALLERY<i class="fa fa-arrow-right fa-1x"></i></button>
         </div>
       </div>
       <!--X X X -->
@@ -157,9 +189,9 @@
     <div class="tabs-nav">
       <div class="container nav-foods">
         <ul class="nav nav-tabs nav-justified">
-          <li class="nav-item active"><a data-toggle="tab" href="#fastfood" ><span class="ffod">Fast Food</span></a></li>
-          <li class="nav-item"><a data-toggle="tab" href="#drinks" >Drinks</a></li>
-          <li class="nav-item"><a data-toggle="tab" href="#chicken" >Chicken</a></li>
+          <li class="nav-item active"><a data-toggle="tab" href="#fastfood"><span class="ffod">Fast Food</span></a></li>
+          <li class="nav-item"><a data-toggle="tab" href="#drinks">Drinks</a></li>
+          <li class="nav-item"><a data-toggle="tab" href="#chicken">Chicken</a></li>
           <li class="nav-item"><a data-toggle="tab" href="#rice">Rice</a></li>
         </ul>
         <div class="tab-content bg-food">
@@ -185,7 +217,9 @@
             <p><strong>Chicken Burger</strong></p>
           </div>
           <div class="tab-pane fade" id="chicken">
-            <p><strong>Beef Burger</strong></p></br></br>
+            <p><strong>Beef Burger</strong></p>
+            </br>
+            </br>
           </div>
           <div class="tab-pane fade" id="rice">
             <p><strong>Chicken Pizza</strong></p>
@@ -217,10 +251,9 @@
         <div class="col-md-5 testimonialright">
           <div class="rightcontent">
             <p class="orange-text"><strong>About Menu</strong></p>
-            <p>We are mainly a little team of 7 members.Lorem ipsum dolor sit amet,
-              vitae suspendisse vestibulum, viverra dignissim vel. Aliquet sed a
-               morbi id nibh, libero id vestibulum, lectus amet, sapien
-               pellentesque imperdiet consequat fermentum magna interdum.</p>
+            <p>We are mainly a little team of 7 members.Lorem ipsum dolor sit amet, vitae suspendisse vestibulum, viverra dignissim vel. Aliquet sed a morbi id nibh, libero id vestibulum, lectus amet, sapien pellentesque imperdiet consequat fermentum magna
+              interdum.
+            </p>
           </div>
         </div>
       </div>
@@ -250,11 +283,11 @@
       <!-- <img src="images/footerlogos/facebook.png" alt="" class="img-fluid">
       <img src="images/footerlogos/twitter.png" alt="">
       <img src="images/footerlogos/pinterest.png" alt=""><br><br> -->
-    <ul class="list-inline">
-    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
-    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
-    <li class="list-inline-item"><a href="#"><i class="fa fa-pinterest fa-2x"></i></a></li>
-    </ul>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+        <li class="list-inline-item"><a href="#"><i class="fa fa-pinterest fa-2x"></i></a></li>
+      </ul>
       <p>2016 Menu Restaurant</p>
     </div>
     </div>
@@ -262,6 +295,8 @@
 
   </div>
 
+  <script src="js/jquery.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
